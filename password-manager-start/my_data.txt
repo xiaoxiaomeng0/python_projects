@@ -1,0 +1,2 @@
+amazon | anna@gmail.com | 123
+google | anna@gmail.com | 123 
