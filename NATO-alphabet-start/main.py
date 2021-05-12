@@ -33,5 +33,9 @@ for (index, row) in data.iterrows():
 is_on = True
 while is_on:
     user_name = input("What is your name?").upper()
-    name_list = {item: new_list[item] for item in user_name}
-    print(name_list)
+    try:
+        name_list = {item: new_list[item] for item in user_name}
+    except KeyError:
+        print("Sorry, only letters in the alphabet please.")
+    else:
+        print(name_list)
